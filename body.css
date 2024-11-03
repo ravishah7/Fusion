@@ -1,0 +1,124 @@
+/* Centering and styling the container content */
+.container {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 1rem;
+  position: relative;
+}
+
+/* Styling the welcome text */
+.wel {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Adjusting the image */
+.fusion {
+  width: 300px;
+  height: auto;
+  margin: 1rem 0;
+  position: relative;
+}
+
+/* Styling the badge */
+.badge {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.badge:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styling for h1 and paragraph */
+.container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.container p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+/* Arc styling */
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 123, 255, 0.2);
+  z-index: -1;
+}
+
+/* Position and style for the first arc */
+.container::before {
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+/* Position and style for the second arc */
+.container::after {
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+/* Responsive adjustments for tablets and mobile devices */
+@media (max-width: 768px) {
+  
+
+  .container::before,
+  .container::after {
+    width: 400px;
+    height: 400px;
+  }
+
+  .container::before {
+    top: 190px;
+  }
+
+  .container::after {
+    top: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .container::before,
+  .container::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  .container::before {
+    top: 250px;
+  }
+
+  .container::after {
+    top: 150px;
+  }
+}

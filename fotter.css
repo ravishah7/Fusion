@@ -1,0 +1,72 @@
+/* General footer styling */
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text for contrast */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  .invert{
+    color: whitesmoke;
+  }
+  /* Section layout for three rows */
+  .footer-section {
+    margin: 15px 0;
+    width: 100%;
+  }
+  
+  /* Styling for contact/social media icons */
+  .contact-links ul {
+    display: flex;
+    gap: 20px; /* Space between icons */
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-links li a {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-links li a:hover {
+    color: #ff8c00; /* Accent color on hover */
+  }
+  
+  /* Styling for information links */
+  .info-links ul {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .info-links li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .info-links li a:hover {
+    color: #ff8c00;
+  }
+  
+  /* Copyright section */
+  .footer-copy {
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .footer-section {
+      margin: 10px 0;
+    }
+  }
+  

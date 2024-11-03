@@ -1,0 +1,81 @@
+/* Basic container styling */
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.text h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.text h2 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.text h2 span {
+    color: #0056b3;
+}
+
+.text p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 1rem 0;
+}
+
+/* Styling for the task container */
+.task {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;background-color: #f4f4f4;
+}
+
+/* Individual card styling */
+.task div {
+    flex: 1 1 300px; /* Responsive basis for each card */
+    
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 40px 0px 40px 0px;
+    margin-bottom: 10%;
+}
+
+.task div:hover {
+    transform: translateY(-5px);background-color:white;
+
+}
+
+.task h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.task p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+    padding: 0 10% 0% 10%;
+}
+
+.task a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.task a:hover {
+    text-decoration: underline;
+}

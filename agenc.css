@@ -1,0 +1,74 @@
+/* Basic styling for the agency section */
+.agency {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem; /* Increased padding for more space */
+    background-color: #f8f9fa; /* Light background for the agency section */
+    position: relative; /* Required for the animated circle */
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners for the section */
+    min-height: 400px; /* Increased minimum height for a larger section */
+    margin: 30px;
+}
+
+
+/* Styling the agency image */
+.agency .img {
+    flex: 1; /* Takes up half of the space */
+    max-width: 50%; /* Ensures it does not exceed half of the container */
+    margin-right: 2rem; /* Space between image and text */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+    border-radius: 10px; /* Rounded corners for the image */
+    /* Removed box-shadow to blend with background */
+    background-color: #f8f9fa; /* Matches the section's background */
+}
+
+.agency .img img {
+    width: 100%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Styling the agency info */
+.agency .info {
+    flex: 1; /* Takes up half of the space */
+    max-width: 50%; /* Ensures it does not exceed half of the container */
+    text-align: left; /* Aligns text to the left */
+}
+
+.agency h3 {
+    font-size: 1.8rem; /* Increased font size for emphasis */
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.agency h2 {
+    font-size: 2.5rem; /* Increased font size for emphasis */
+    color: #007bff;
+    margin: 0.5rem 0;
+}
+
+.agency p {
+    font-size: 1.1rem; /* Slightly increased font size */
+    color: #555;
+    line-height: 1.6; /* Better readability */
+    margin-top: 1rem;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .agency {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .agency .img {
+        margin-right: 0; /* Remove margin on small screens */
+        margin-bottom: 1rem; /* Add space below image */
+        max-width: 100%; /* Ensure full width on small screens */
+    }
+
+    .agency .info {
+        max-width: 100%; /* Ensure full width on small screens */
+    }
+}
