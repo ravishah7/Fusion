@@ -15,13 +15,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5f1f1;
   padding: 1rem;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
+}
+
+/* Add a border when the navbar is scrolled */
+.navbar.scrolled {
+  border-bottom: 2px solid blue; /* Change to your desired border color and thickness */
+  transition: border 0.3s ease; /* Smooth transition for the border */
 }
 
 /* Logo styling */
@@ -73,6 +78,13 @@ body {
   margin: 3px 0;
   transition: 0.4s;
 }
+/* Add a border when the navbar is scrolled */
+.navbar.scrolled {
+  border-bottom: 2px solid blue; /* Change to your desired border color and thickness */
+  transition: border 0.3s ease; /* Smooth transition for the border */
+  background-color: #f5f1f1;
+}
+
 
 /* Responsive styles */
 @media (max-width: 1024px) {

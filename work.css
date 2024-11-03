@@ -1,15 +1,16 @@
 /* Basic container styling */
-.work {
+.works {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
     text-align: center;
+    background: linear-gradient(135deg, #2cf5f1, #021444);
 }
 
 .text h3 {
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
@@ -24,7 +25,7 @@
 
 .text p {
     font-size: 1rem;
-    color: #555;
+    color: #373737;
     max-width: 600px;
     margin: 1rem 0;
 }
@@ -33,21 +34,20 @@
 .task {
     display: flex;
     gap: 1.5rem;
-    margin-top: 2rem;
     flex-wrap: wrap;
-    justify-content: center;background-color: #f4f4f4;
+    justify-content: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
 }
 
 /* Individual card styling */
 .task div {
     flex: 1 1 300px; /* Responsive basis for each card */
-    
+    background-color: inherit;
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease;
-    padding: 40px 0px 40px 0px;
-    margin-bottom: 10%;
 }
 
 .task div:hover {

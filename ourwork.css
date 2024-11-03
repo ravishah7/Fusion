@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem; /* Space between list and card items */
-    padding: 2rem;
+    
 }
 
 /* Styling for List */
@@ -17,9 +17,10 @@
     justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #000;
+    color: #fff;
     width: 100%; /* Full-width for centered alignment */
     margin: 0 auto; /* Centers the list on the page */
+    background: linear-gradient(135deg, #2cf5f1, #021444); 
 }
 
 /* Card Container Styling */
