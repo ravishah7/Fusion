@@ -1,0 +1,143 @@
+/* General styling for the Squad section */
+.squad {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0  1rem 0;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .squad-text h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .squad-text p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Container for the squad cards */
+  .sqaud-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Individual card styling */
+  .squad-card {
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 3rem 0  1rem 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Card hover effect */
+  .squad-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Squad image */
+  .squad-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  /* Info section */
+  .squad-info {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .squad-info h3 {
+    font-size: 1.25rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .squad-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .badge{
+    margin-left: 70%;
+  }
+
+
+  /* Social links container */
+  .link {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  
+  .links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  /* Social link hover effect */
+  .links a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Placeholder icon for social links */
+  .links a::before {
+    content: "⨀"; /* Replace with actual icons */
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px){
+    .badge{
+      margin-left:40%;
+    }
+  }
+  @media (max-width: 768px) {
+    .squad-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .squad-card {
+      width: 30%;
+    }
+    .badge{
+      margin-left: left 40%;
+    }
+  }
+  @media (max-width: 430px) {
+    .sqaud-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .squad-card {
+      width: 80%;
+    }
+    .badge{
+      margin-left: 40%;
+    }
+  
+  }

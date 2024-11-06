@@ -17,10 +17,10 @@
     justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #111010;
     width: 100%; /* Full-width for centered alignment */
     margin: 0 auto; /* Centers the list on the page */
-    background: linear-gradient(135deg, #2cf5f1, #021444); 
+    background: linear-gradient(135deg, #2cf5f1, #0a909c); 
 }
 
 /* Card Container Styling */
@@ -78,20 +78,7 @@
 
 /* Button Styling */
 .badge {
-    background-color: #007bff;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
     margin: 1rem 0;
-    transition: background-color 0.3s ease;
-}
-
-.badge:hover {
-    background-color: #0056b3;
 }
 
 /* Responsive Adjustments */

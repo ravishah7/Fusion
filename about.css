@@ -1,0 +1,179 @@
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .about {
+    text-align: center;
+    font-size: 3rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #2cf5f1, #0a909c);
+  }
+  .about-text{
+    width: 50%;
+  }
+  .about-text h1 {
+    font-size: 2.5rem;
+    color: #111010;
+    margin-bottom: 1rem;
+    text-align: center;    
+    text-wrap: pretty;
+  }
+  
+  .about-text p {
+    font-size: 1.5rem;
+    color: #373737;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-wrap: pretty;
+  }
+  
+  /* Badge Button */
+  .badge {
+    background-color: #37c40c;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .badge:hover {
+    background-color: #007bff;
+  }
+  
+  /* Customer Stats */
+  /* Container for stats */
+.customer-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 50%;
+  }
+  
+  /* Styling for each stat box */
+  /* Animation for lifting and dropping effect */
+@keyframes liftDrop {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Stat box styling with continuous animation */
+.stat-box {
+  width: 180px;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  animation: liftDrop 1s ease-in-out infinite;
+}
+
+/* Highlighted stat number */
+.stat-box h1 {
+  font-size: 2rem;
+  color: #007bff; /* Bright color for highlighting */
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Descriptive text */
+.stat-box p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stat-box {
+    width: 150px;
+    padding: 1rem;
+  }
+
+  .stat-box h1 {
+    font-size: 1.75rem;
+  }
+
+  .stat-box p {
+    font-size: 0.9rem;
+  }
+}
+
+  
+  /* Highlighted stat number */
+  .stat-box h1 {
+    font-size: 2rem;
+    color: #007bff; /* Bright color for highlighting */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Descriptive text */
+  .stat-box p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.25rem;
+  }
+  
+  /* Responsive Design */
+  @media(max-width: 1024px){
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        padding: 2rem;
+      }
+      .customer-stats{
+        width: 100%;
+      }
+      .about-text{
+        width: 100%;
+      }
+
+  }
+  @media (max-width: 768px) {
+    .stat-box {
+      width: 150px;
+      padding: 1rem;
+    }
+  
+    .stat-box h1 {
+      font-size: 1.75rem;
+    }
+  
+    .stat-box p {
+      font-size: 0.9rem;
+    }
+  }

@@ -5,12 +5,13 @@
     align-items: center;
     padding: 2rem;
     text-align: center;
-    background: linear-gradient(135deg, #2cf5f1, #021444);
+    background: linear-gradient(135deg, #2cf5f1, #0a909c);
+
 }
 
 .text h3 {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #111010;
     margin-bottom: 0.5rem;
 }
 

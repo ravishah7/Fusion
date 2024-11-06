@@ -5,18 +5,19 @@
     align-items: center;
     width: 100%;
     padding: 2rem;
-    background: linear-gradient(135deg, #2cf5f1, #021444);
+    background: linear-gradient(135deg, #2cf5f1, #0a909c);
     border-radius: 8px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     margin: 2rem 0;
-    overflow: hidden; 
+    overflow: hidden;
+    height: 80vh;
 }
 
 /* Review Heading Styling */
 .revheading h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #111010;
     text-align: center;
     line-height: 1.3;
 }
